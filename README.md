@@ -1,2 +1,2 @@
-# PLIC
-Programming Language Interpreted in C, and its catchy!
+# RLIC
+Programming Language Interpreted in R, and its catchy!
