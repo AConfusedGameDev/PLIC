@@ -1,2 +1,2 @@
-# RLIC
-Programming Language Interpreted in R, and its catchy!
+# PLIR
+Programming Language Interpreted in Rust, and its catchy!
