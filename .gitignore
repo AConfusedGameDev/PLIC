@@ -30,7 +30,8 @@
 
 # Executables
 *.exe
-!plic.exe
+!plir.exe
+!plir.pdb
 *.out
 *.app
 *.i*86
