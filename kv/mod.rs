@@ -30,3 +30,8 @@ pub fn get_kv<Value: 'static + Clone>(vector: Vec<(String, Value)>, index: usize
     let value: Value = (&vector[index].1).clone();
     return (key, value);
 }
+
+pub fn set_kv<Value: 'static>(mut vector: Vec<(String, Value)>, value: Value, index: usize) -> Vec<(String, Value)> {
+	vector[index].1 = value;
+	return vector;
+}
