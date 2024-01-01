@@ -6,9 +6,11 @@ mod kv;
 fn main() {
     let mut integers = kv::create_kv::<i32>();
     
-    integers = kv::add_kv::<i32>(integers.clone(), "key1", 1);
+    integers = kv::add_kv::<i32>(integers.clone(), ("key1", 1));
 
-    integers = kv::remove_kv::<i32>(integers.clone(), 0);
+    let index: usize = kv::index_of_kv::<i32>(integers.clone(), "key1").unwrap();
 
-    println!("{}", integers[0].0);
+    let key: i32 = kv::get_v::<i32>(integers.clone(), index);
+
+    println!("{}", key);
 }
