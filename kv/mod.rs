@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use std::convert::TryInto;
 
 pub fn create_kv<Value: 'static>() -> Vec<(String, Value)> {
