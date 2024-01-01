@@ -12,7 +12,7 @@ pub fn add_kv<Value: 'static>(mut vector: Vec<(String, Value)>, (key, value): (&
     return vector;
 }
 
-pub fn remove_kv<Value: 'static>(mut vector: Vec<(String, Value)>, index: i32) -> Vec<(String, Value)> {
+pub fn remove_kv<Value: 'static>(mut vector: Vec<(String, Value)>, index: usize) -> Vec<(String, Value)> {
     vector.remove(index.try_into().unwrap());
     return vector;
 }
